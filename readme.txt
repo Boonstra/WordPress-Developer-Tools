@@ -18,15 +18,19 @@ database querying and server memory usage are not yet supported.
 = Features =
 
  - Log any type of variable
- - That's it :)
+ - Watch for new log entries through the backend interface
+ - That's it for now :)
 
 
 == Installation ==
 
 1. Install Developer Tools either via the WordPress.org plugin directory, or by uploading the files to your server.
 
-2. After activating Developer Tools, TODO Finish
+2. After activating Developer Tools, go to the "Developer Tools" sub-menu item in the dashboard's "Tools" menu.
 
+3. Add a call to the log method in your code.
+
+4. Sit back and enjoy the log entries that start coming in.
 
 == Frequently Asked Questions ==
 

@@ -93,7 +93,7 @@ developer_tools_backend_script.log = function()
 				self.totalNumberOfNewNotifcations += numberOfNewNotifications;
 			}
 
-			self.showNotificationInTitle(['(' + self.totalNumberOfNewNotifcations + ') ' + self.originalTitle], true, 10000, 2000);
+			self.showNotificationInTitle(['(' + self.totalNumberOfNewNotifcations + ') ' + self.originalTitle], true, -1, 2000);
 		})
 	};
 
