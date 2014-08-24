@@ -38,7 +38,7 @@ class DeveloperToolsLogger
 		$entries = self::getAll();
 
 		$entries[] = array(
-			'timestamp' => time(),
+			'timestamp' => microtime(true),
 			'content'   => $content,
 			'backtrace' => $backtrace,
 		);
@@ -102,7 +102,7 @@ class DeveloperToolsLogger
 	 */
 	static function jsonOutputLog()
 	{
-		echo json_encode(self::getAll());
+		echo json_encode(self::popAll());
 
 		die();
 	}

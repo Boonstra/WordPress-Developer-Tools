@@ -65,7 +65,7 @@ class DeveloperTools
 		wp_enqueue_script(
 			'developer-tools-backend-script',
 			self::getPluginUrl() . '/js/min/all.backend.min.js',
-			array('jquery'),
+			array('jquery', 'jquery-ui-core'),
 			self::$version
 		);
 
