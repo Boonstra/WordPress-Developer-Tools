@@ -10,7 +10,7 @@ developer_tools_backend_script.log = function()
 	 */
 	self.init = function()
 	{
-		if (window.pagenow !== 'tools_page_developer-tools')
+		if (window.pagenow !== 'developer-tools_page_developer-tools-logger')
 		{
 			return
 		}
@@ -70,7 +70,7 @@ developer_tools_backend_script.log = function()
 
 				entry = entries[entry];
 
-				date = new Date(entry['timestamp']);
+				date = new Date(entry['timestamp'] * 1000);
 
 				$entry = self.$entryTemplate.clone(true, true);
 

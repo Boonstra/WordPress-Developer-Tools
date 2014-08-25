@@ -23,10 +23,16 @@ class DeveloperToolsLogger
 	 * Logs any type of input.
 	 *
 	 * @since 1.0.0
-	 * @param mixed $input
 	 */
-	static function log($input)
+	static function log()
 	{
+		$input = func_get_args();
+
+		if (count($input) === 1)
+		{
+			$input = $input[0];
+		}
+
 		ob_start();
 		var_dump($input);
 		$content = ob_get_clean();
@@ -49,6 +55,7 @@ class DeveloperToolsLogger
 	/**
 	 * Returns all log entries from the database.
 	 *
+	 * @since 1.0.0
 	 * @return array $entries
 	 */
 	static function getAll()
@@ -85,6 +92,7 @@ class DeveloperToolsLogger
 	/**
 	 * Pops and returns all log entries from the database.
 	 *
+	 * @since 1.0.0
 	 * @return array $entries
 	 */
 	static function popAll()
@@ -99,6 +107,8 @@ class DeveloperToolsLogger
 
 	/**
 	 * Echoes the entire log as JSON, using the self::pop method. Kills the application when done.
+	 *
+	 * @since 1.0.0
 	 */
 	static function jsonOutputLog()
 	{
@@ -174,11 +184,10 @@ if (!function_exists('l'))
 	 * Shorthand function for the DeveloperToolsLogger::Log method
 	 *
 	 * @since 1.0.0
-	 * @param $input
 	 */
-	function l($input)
+	function l()
 	{
-		DeveloperToolsLogger::log($input);
+		call_user_func_array(array('DeveloperToolsLogger', 'log'), func_get_args());
 	}
 }
 
@@ -188,10 +197,9 @@ if (!function_exists('dtlog'))
 	 * Shorthand function for the DeveloperToolsLogger::Log method
 	 *
 	 * @since 1.0.0
-	 * @param $input
 	 */
-	function dtlog($input)
+	function dtlog()
 	{
-		DeveloperToolsLogger::log($input);
+		call_user_func_array(array('DeveloperToolsLogger', 'log'), func_get_args());
 	}
 }

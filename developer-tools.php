@@ -38,6 +38,7 @@ class DeveloperTools
 
 		DeveloperToolsAdmin::init();
 		DeveloperToolsLogger::init();
+		DeveloperToolsException::init();
 
 		// Log on logging hook
 		add_action('dtlog', array('DeveloperToolsLogger', 'log'));
