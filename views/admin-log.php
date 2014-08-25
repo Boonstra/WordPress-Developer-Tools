@@ -1,6 +1,6 @@
 <div class="wrap developer-tools-logger">
 
-	<h3>Developer Tools - Logger</h3>
+	<h3><?php _e('Log', 'developer-tools'); ?></h3>
 
 	<table class="widefat">
 		<thead>

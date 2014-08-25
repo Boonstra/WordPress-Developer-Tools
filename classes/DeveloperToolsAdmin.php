@@ -18,13 +18,22 @@ class DeveloperToolsAdmin
 	 */
 	static function addMenuItems()
 	{
-		add_submenu_page(
-			'tools.php',
+		add_menu_page(
 			__('Developer Tools', 'developer-tools'),
 			__('Developer Tools', 'developer-tools'),
 			'manage_options',
 			'developer-tools',
-			array(__CLASS__, 'renderDeveloperToolsPage')
+			array(__CLASS__, 'renderDeveloperToolsPage'),
+			'dashicons-media-code'
+		);
+
+		add_submenu_page(
+			'developer-tools',
+			__('Log', 'developer-tools'),
+			__('Log', 'developer-tools'),
+			'manage_options',
+			'developer-tools-logger',
+			array(__CLASS__, 'renderLogPage')
 		);
 	}
 
@@ -33,6 +42,14 @@ class DeveloperToolsAdmin
 	 */
 	static function renderDeveloperToolsPage()
 	{
-		DeveloperTools::outputView('admin-page.php');
+		DeveloperTools::outputView('admin-info.php');
+	}
+
+	/**
+	 * @since 1.0.0
+	 */
+	static function renderLogPage()
+	{
+		DeveloperTools::outputView('admin-log.php');
 	}
 }
