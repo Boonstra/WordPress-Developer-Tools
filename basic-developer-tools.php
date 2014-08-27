@@ -1,8 +1,8 @@
 <?php
 /*
- Plugin Name: Developer Tools
- Plugin URI: http://wordpress.org/extend/plugins/developer-tools/
- Description: Developer Tools helps developers to log any variable, error or exception of which they need the value, without bloating their live environment.
+ Plugin Name: Basic Developer Tools
+ Plugin URI: http://wordpress.org/extend/plugins/basic-developer-tools/
+ Description: Basic Developer Tools helps developers to log any variable, error or exception of which they need the value, without bloating their live environment.
  Version: 1.0.0
  Requires at least: 3.5
  Author: StefanBoonstra

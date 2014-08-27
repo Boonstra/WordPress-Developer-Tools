@@ -1,4 +1,4 @@
-﻿=== Developer Tools ===
+﻿=== Basic Developer Tools ===
 
 Contributors: stefanboonstra
 Tags: log, logger, logging, develop, development, developer, developing, exception, exceptions, error, errors, catch, catching, caught, tool, tools, tooling
@@ -7,7 +7,7 @@ Tested up to: 4.0
 Stable tag: 2.2.22
 License: GPLv2
 
-Developer Tools helps developers to log any variable, error or exception of which they need the value, without bloating
+Basic Developer Tools helps developers to log any variable, error or exception of which they need the value, without bloating
 their live environment.
 
 
