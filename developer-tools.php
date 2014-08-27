@@ -2,7 +2,7 @@
 /*
  Plugin Name: Developer Tools
  Plugin URI: http://wordpress.org/extend/plugins/developer-tools/
- Description: Developer Tools helps the WordPress developer to log any variable or function of which they need the output, without bloating their current page or live environment.
+ Description: Developer Tools helps developers to log any variable, error or exception of which they need the value, without bloating their live environment.
  Version: 1.0.0
  Requires at least: 3.5
  Author: StefanBoonstra

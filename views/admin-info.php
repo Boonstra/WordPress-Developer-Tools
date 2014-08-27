@@ -17,6 +17,6 @@
 	<h4><?php _e('Exceptions', 'developer-tools'); ?></h4>
 
 	<p>
-		<?php _e('Exceptions of any level will automatically be written to the log.', 'developer-tools'); ?>
+		<?php _e('All catchable exceptions and errors that occur during page viewing will automatically be written to the log. This excludes fatal errors like parse errors, compile errors and PHP core errors.', 'developer-tools'); ?>
 	</p>
 </div>
