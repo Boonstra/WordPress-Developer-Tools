@@ -24,6 +24,11 @@ website's database queries and server memory usage are not yet supported.
  - No bloating the live environment with developer dumps
  - That's it for now :)
 
+= Need the (uncompressed) source code? =
+
+Find the Slideshow project's source code in my [GitHub](https://github.com/Boonstra/WordPress-Developer-Tools) repository. The
+uncompressed files can be compiled using [Prepros](http://alphapixels.com/prepros/), or [CodeKit](http://incident57.com/codekit/).
+
 
 == Installation ==
 
@@ -50,3 +55,4 @@ website's database queries and server memory usage are not yet supported.
 == Links ==
 
 *	[Stefan Boonstra](http://stefanboonstra.com/)
+*   [GitHub](https://github.com/Boonstra/WordPress-Developer-Tools)
