@@ -3,7 +3,7 @@
  Plugin Name: Basic Developer Tools
  Plugin URI: http://wordpress.org/extend/plugins/basic-developer-tools/
  Description: Basic Developer Tools helps developers to log any variable, error or exception of which they need the value, without bloating their live environment.
- Version: 1.0.0
+ Version: 1.0.1
  Requires at least: 3.5
  Author: StefanBoonstra
  Author URI: http://stefanboonstra.com/
@@ -18,7 +18,7 @@
 class DeveloperTools
 {
 	/** @var string $version */
-	static $version = '1.0.0';
+	static $version = '1.0.1';
 
 	/**
 	 * Bootstraps the application by assigning the right functions to
