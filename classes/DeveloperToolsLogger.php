@@ -35,7 +35,7 @@ class DeveloperToolsLogger
 
 		ob_start();
 		var_dump($input);
-		$content = ob_get_clean();
+		$content = htmlspecialchars(ob_get_clean());
 
 		ob_start();
 		debug_print_backtrace();

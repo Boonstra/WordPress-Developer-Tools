@@ -4,7 +4,7 @@ Contributors: stefanboonstra
 Tags: log, logger, logging, develop, development, developer, developing, exception, exceptions, error, errors, catch, catching, caught, tool, tools, tooling
 Requires at least: 3.5
 Tested up to: 4.3
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2
 
 Basic Developer Tools helps developers to log any variable, error or exception of which they need the value, without bloating
@@ -47,6 +47,9 @@ uncompressed files can be compiled using [Prepros](http://alphapixels.com/prepro
 
 
 == Changelog ==
+
+= 1.0.2 =
+*   Fixed: HTML is now shown as text in log.
 
 = 1.0.1 =
 *   Compatible with WordPress 4.3.
